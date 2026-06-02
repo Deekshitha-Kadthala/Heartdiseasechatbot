@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Detection Chatbot</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>❤️ AI Heart Disease Detection ❤️</h1>
+
+        <div class="upload-section">
+
+            <h2>Upload Medical Image</h2>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+            <button onclick="uploadImage()">
+                Predict Disease
+            </button>
+
+        </div>
+
+        <div class="result-section">
+
+            <h2>Prediction Result</h2>
+
+            <div id="predictionResult">
+                Waiting for image upload...
+            </div>
+
+        </div>
+
+        <div class="chat-section">
+
+            <h2>Medical Chatbot</h2>
+
+            <div id="chatBox"></div>
+
+            <input
+                type="text"
+                id="userMessage"
+                placeholder="Ask about heart disease..."
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
